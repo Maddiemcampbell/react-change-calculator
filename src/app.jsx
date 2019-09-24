@@ -55,6 +55,7 @@ class App extends Component {
         </header>
         </div>
 
+      <div id='inputs'>
         <div id='inputInfo'>
           <div id='titleInput'>
             <h2>Enter Information</h2>
@@ -62,11 +63,12 @@ class App extends Component {
 
           <div id='inputFields'>
             <label>How much is due?</label>
-            <input name="amountDue" value={this.state.amountDue} onChange={this.handleChange} type='number'></input>
+            <input name="amountDue" id="input" value={this.state.amountDue} onChange={this.handleChange} type='number'></input>
             <label>How much is received?</label>
-            <input name="amountReceived" value={this.state.amountReceived} onChange={this.handleChange} type='number'></input>
-            <button onClick={this.calculate}>Calculate</button>
+            <input name="amountReceived" id ='input' value={this.state.amountReceived} onChange={this.handleChange} type='number'></input>
+            <button id='myButton' onClick={this.calculate}>Calculate</button>
           </div>
+      </div>
 
           <div id='output-body'>
 
