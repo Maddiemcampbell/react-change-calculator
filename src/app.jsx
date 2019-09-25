@@ -49,14 +49,14 @@ class App extends Component {
     return (
       <div className='contentwrapper'>
 
-        <div id='title'>
+        <div className= 'border' id='title'>
           <header>
             Change Calculator
-        </header>
+          </header>
         </div>
 
       <div id='inputs'>
-        <div id='inputInfo'>
+        <div className= 'border' id='inputInfo'>
           <div id='titleInput'>
             <h2>Enter Information</h2>
           </div>
@@ -66,7 +66,7 @@ class App extends Component {
             <input name="amountDue" id="input" value={this.state.amountDue} onChange={this.handleChange} type='number'></input>
             <label>How much is received?</label>
             <input name="amountReceived" id ='input' value={this.state.amountReceived} onChange={this.handleChange} type='number'></input>
-            <button id='myButton' onClick={this.calculate}>Calculate</button>
+            <button name="submit" id='myButton' className="btn btn-primary" type="button" onClick={this.calculate}>Calculate</button>
           </div>
       </div>
 

@@ -8,13 +8,20 @@
 
   <style>
 
+    .contentwrapper {
+      color: #0c445e;
+    }
+
     body {
-      /* Source: https://uigradients.com */
       background: #3a7bd5;
       background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
       background: linear-gradient(to right, #3a6073, #3a7bd5);
     }
-    
+
+    #title{
+      margin-top: 25px;
+    }
+
     header {
       text-align: center;
       font-size: 40px;
@@ -23,10 +30,10 @@
       padding: 10px;
     }
 
-    #inputInfo{
+    .border {
       background-color: white;
       padding: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       border-radius: 15px;
     }
 
@@ -36,6 +43,8 @@
     }
 
     #inputFields{
+      display: flex;
+      flex-wrap: wrap;
       background-color: orange;
       padding: 15px;
       border-radius: 15px;
@@ -65,9 +74,10 @@
 
     .changeOutput{
       background-color: orange;
+      border-radius: 10px;
       text-align: center;
-      height: 80px;
-      width: 80px;
+      height: 90px;
+      width: 90px;
       padding: 5px;
       margin-bottom: 10px;
       margin-top: 10px;
@@ -75,8 +85,14 @@
       margin-left: 15px;
     }
 
+    h6{
+      font-size: 16px;
+    }
+
     #input{
       padding: 7px;
+      margin-right: 10px;
+      margin-left: 10px;
       font-size: 18px;
       border-width: 1px;
       border-color: #b1b1b3;
@@ -95,19 +111,19 @@
       background-image: -ms-linear-gradient(top, #ffffff, #9c9c9c);
       background-image: -o-linear-gradient(top, #ffffff, #9c9c9c);
       background-image: linear-gradient(to bottom, #ffffff, #9c9c9c);
-      -webkit-border-radius: 17;
-      -moz-border-radius: 17;
+      border-radius: 4px;
       border-radius: 17px;
       font-family: Arial;
       color: #000000;
       font-size: 20px;
-      padding: 10px 20px 10px 20px;
+      padding: 7px;
+      margin-left: 10px;
       text-decoration: none;
     }
 
     #myButton:hover {
       background: #3a7bd5;
-    text-decoration: none;
+      text-decoration: none;
     }
   </style>
 
