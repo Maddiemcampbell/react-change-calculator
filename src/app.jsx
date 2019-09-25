@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { doesNotReject } from 'assert';
 
 class App extends Component {
   constructor(props) {
